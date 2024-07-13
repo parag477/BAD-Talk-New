@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAD TALKS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000000;
+            /* dark theme */
+            font-family: 'Montserrat', sans-serif;
+            /* different font style */
+        }
+
+        .container {
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+            background-color: #000000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: white;
+            font-family: "Neuton", serif;
+        }
+
+        h1,
+        h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .benefits {
+            margin-top: 20px;
+        }
+
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits li {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .images {
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            display: inline-block;
+            margin-right: 40px;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .circle {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto;
+            border: 5px solid rgb(139, 109, 71);
+        }
+
+        hr {
+            width: 33%;
+            margin: 0 10px;
+            border: 2px solid red;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .line {
+            color: red;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .top {
+            color: white;
+            text-align: center;
+        }
+
+        .desc {
+            color: #fff;
+            font-size: 1.4rem;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin: 20px 0; */
+        }
+
+        .main-head{
+              font-size: 2.5rem; 
+            }
+
+        @media (max-width: 1024px) {
+            .images {
+                flex-wrap: wrap;
+            }
+
+            .image {
+                width: 50%;
+            }
+
+            hr {
+                width: 50%;
+            }
+
+            .desc {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image {
+                width: 50%;
+            }
+
+            hr {
+                width: 36%;
+            }
+
+            /* .desc {
+                font-size: 1rem;
+            } */
+        }
+
+        @media (max-width: 600px) {
+            .images {
+                flex-wrap: wrap;
+            }
+
+            .circle {
+                /* height: auto;
+                max-width: 250px; */
+                margin: 5px;
+                border: 3px solid rgb(139, 109, 71);
+            }
+
+            .image {
+                width: 40%;
+                /* height: 250px; */
+                margin-right: 30px;
+            }
+
+            hr {
+                width: 100%;
+            }
+
+            .desc {
+                padding-left: 20px;
+                padding-right: 20px;
+                /* margin-bottom: 300px; */
+                font-size: 1rem;
+            }
+
+            .line {
+                font-size: 0.9rem;
+            }
+
+            hr {
+                margin: 0 5px;
+            }
+
+            .main-head{
+              font-size: 1.5rem; 
+            }
+        }
+
+        @media (max-width:340px) {
+            .circle {
+                /* height: auto;
+                max-width: 250px; */
+                margin: 0px;
+                border: 3px solid rgb(139, 109, 71);
+            }
+
+            .image {
+                width: 30%;
+                margin-right: 35px;
+            }
+
+            .desc{
+                font-size: 0.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h3 style="color: red;">WHY ATTEND</h3>
+            <h1 class="main-head">WHAT'S IN IT BAD FOR STUDENTS?</h1>
+            <h3>BENEFITS FOR STUDENTS</h3>
+            <div class="separator">
+                <hr>
+                <h3 class="line">BENEFITS FOR STUDENTS</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="images">
+            <div class="image">
+                <img src="./assets/bad-1.jpeg" alt="Image 1" class="circle">
+                <p class="desc">INTERNSHIP OPPORTUNITIES WITH LEADING COMPANIES</p>
+            </div>
+            <div class="image">
+                <img src="./assets/bad-5.jpeg" alt="Image 1" class="circle">
+                <p class="desc">GAIN REAL-TIME INDUSTRY INSIGHTS</p>
+            </div>
+            <div class="image">
+                <img src="./assets/bad-3.avif" alt="Image 1" class="circle">
+                <p class="desc">ENJOY REFRESHMENTS AND SNACKS</p>
+            </div>
+            <div class="image">
+                <img src="./assets/bad-4.jpg" alt="Image 1" class="circle">
+                <p class="desc">ATTEND MOTIVATIONAL SESSIONS</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
