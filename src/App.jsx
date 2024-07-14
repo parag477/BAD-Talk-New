@@ -9,6 +9,7 @@ import Slide from "./component/team/Slide";
 import RegisterForm from "./component/RegisterForm/RegisterForm";
 import "./App.css";
 import Speakers from "./component/Speakers/Speakers";
+import Ticket from "./component/Ticket/Ticket";
 
 function App() {
   useEffect(() => {
@@ -69,6 +70,10 @@ function App() {
         <Route path="#whatIsAbout" element={<WhatIsBad />} />
         <Route path="#team" element={<Slide />} />
         <Route path="#footer" element={<Footer />} />
+        <Route path="/ticket" element={<Ticket />} />
+
+        <Route path="/ticket/:id" element={<Ticket />} />
+ 
       </Routes>
     </div>
   );
