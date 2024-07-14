@@ -1,25 +1,26 @@
 import React from "react";
-import "./EventDetails.css";
+import "./HeroSection.css";
 import heroImage from "../../assets/ceoImg.png"; // Replace with your image path
 
-function EventDetails() {
+function HeroSection() {
   return (
     <div className="hero-section">
       <div className="hero-content">
         <h1 className="hero-headline">
-          BAD <span className="hero-highlight">Talks 2024</span> <br />
+          BAD <span className="hero-highlight">Talks 2024</span>
+        </h1>
+        <h1 className="hero-headline-2">
           The CEO Summit :
         </h1>
         <p className="hero-subheadline">The Ultimate Business And Experience</p>
+        
         <div className="hero-event-details">
-          <p>
-            <span className="hero-label">Date : </span> August 8 , 2024
-          </p>
+          <p><span className="hero-label">Date : </span> August 8, 2024</p>
           <div className="hero-vertical-line"></div>
-          <p>
-            <span className="hero-label">Location : </span>Audi-2 IPS Academy
-            Rajendra Nagar, Indore
-          </p>
+          <p><span className="hero-label">Venue : </span>Audi-2, Premium Audi</p>
+          <div className="hero-vertical-line"></div>
+          <p><span className="hero-label">Location : </span>IPS Academy, Rajendra Nagar, Indore</p>
+
           <div className="hero-image12">
             <img src={heroImage} alt="Hero" />
           </div>
@@ -40,4 +41,4 @@ function EventDetails() {
   );
 }
 
-export default EventDetails;
+export default HeroSection;

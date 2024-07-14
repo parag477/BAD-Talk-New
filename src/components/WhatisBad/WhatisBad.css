@@ -13,11 +13,6 @@
     font-family: "Neuton", serif;
 } */
 
-.why-attend {
-    color: red;
-}
-
-
 /* .benefits {
     margin-top: 20px;
 }
@@ -33,26 +28,37 @@
     color: #ccc;
 } */
 
-.images {
+
+.whatisbad-section {
+    padding: 0 1em;
+    color: white;
+    min-height: 85vh;
+  }
+
+.whatisbad-why-attend {
+    color: red;
+}
+
+.whatisbad-image-container {
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 3em;
     display: flex;
     flex-wrap: wrap;
 }
 
-.image {
+.whatisbad-image {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 3em;
     width: 100%;
     max-width: 250px;
     text-align: center;
 }
 
-.circle {
+.whatisbad-circle {
     width: 100%;
     height: auto;
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: 10px auto;
@@ -68,42 +74,42 @@ hr {
     vertical-align: middle;
 }
 
-.line {
+.whatisbad-separator-line {
     color: red;
     display: inline-block;
     margin: 0;
 }
 
-.top {
+.whatisbad-top {
     color: white;
     text-align: center;
 }
 
-.desc {
+.whatisbad-desc {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 14px;
     padding-left: 48px;
     padding-right: 48px;
 }
 
-.separator {
+.whatisbad-separator {
     display: flex;
     align-items: center;
     justify-content: center;
     /* margin: 20px 0; */
 }
 
-.main-head{
+.whatisbad-main-head{
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
 @media (max-width: 1024px) {
-    .images {
+    .whatisbad-image-container {
         flex-wrap: wrap;
     }
 
-    .image {
+    .whatisbad-image {
         width: 50%;
     }
 
@@ -111,13 +117,13 @@ hr {
         width: 50%;
     }
 
-    .desc {
+    .whatisbad-desc {
         font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .image {
+    .whatisbad-image {
         width: 50%;
     }
 
@@ -131,18 +137,18 @@ hr {
 }
 
 @media (max-width: 600px) {
-    .images {
+    .whatisbad-image-container {
         flex-wrap: wrap;
     }
 
-    .circle {
+    .whatisbad-circle {
         /* height: auto;
         max-width: 250px; */
         margin: 5px;
         border: 3px solid rgb(139, 109, 71);
     }
 
-    .image {
+    .whatisbad-image {
         width: 40%;
         /* height: 250px; */
         margin-right: 30px;
@@ -152,14 +158,14 @@ hr {
         width: 100%;
     }
 
-    .desc {
+    .whatisbad-desc {
         padding-left: 20px;
         padding-right: 20px;
         /* margin-bottom: 300px; */
         font-size: 1rem;
     }
 
-    .line {
+    .whatisbad-separator-line {
         font-size: 0.9rem;
     }
 
@@ -167,26 +173,26 @@ hr {
         margin: 0 5px;
     }
 
-    .main-head{
+    .whatisbad-main-head{
       font-size: 1.5rem; 
       margin-bottom: 10px;
     }
 }
 
 @media (max-width:340px) {
-    .circle {
+    .whatisbad-circle {
         /* height: auto;
         max-width: 250px; */
         margin: 0px;
         border: 3px solid rgb(139, 109, 71);
     }
 
-    .image {
+    .whatisbad-image {
         width: 30%;
         margin-right: 35px;
     }
 
-    .desc{
+    .whatisbad-desc{
         font-size: 0.6rem;
     }
 }

@@ -67,7 +67,7 @@ const Team = () => {
   const columnCount = getColumnCount(activeTeam.length);
 
   return (
-    <div>
+    <section className='team-section'>
       <div className="team-title">Meet Our Team</div>
       <div className="team-button-group">
         {Object.keys(teamData).map((category) => (
@@ -94,7 +94,7 @@ const Team = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

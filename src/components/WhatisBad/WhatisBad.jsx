@@ -7,36 +7,36 @@ import Img4 from '../../assets/bad-4.jpg'
 
 const WhatisBad = () => {
   return (
-    <div>
-        <div className="top">
-            <h3 className='why-attend'>WHY ATTEND</h3>
-            <h1 className="main-head">WHAT'S IN IT BAD FOR STUDENTS?</h1>
+    <section className="whatisbad-section">
+        <div className="whatisbad-top">
+            <h3 className='whatisbad-why-attend'>WHY ATTEND</h3>
+            <h1 className="whatisbad-main-head">WHAT'S IN IT BAD FOR STUDENTS?</h1>
             <h3>BENEFITS FOR STUDENTS</h3>
-            <div className="separator">
+            <div className="whatisbad-separator">
                 <hr/>
-                <h3 className="line">BENEFITS FOR STUDENTS</h3>
+                <h3 className="whatisbad-separator-line">BENEFITS FOR STUDENTS</h3>
                 <hr/>
             </div>
         </div>
-        <div className="images">
-            <div className="image">
-                <img src={Img1} alt="Image 1" className="circle" />
-                <p className="desc">INTERNSHIP OPPORTUNITIES WITH LEADING COMPANIES</p>
+        <div className="whatisbad-image-container">
+            <div className="whatisbad-image">
+                <img src={Img1} alt="Image 1" className="whatisbad-circle" />
+                <p className="whatisbad-desc">INTERNSHIP OPPORTUNITIES WITH LEADING COMPANIES</p>
             </div>
-            <div className="image">
-                <img src={Img2} alt="Image 1" className="circle" />
-                <p className="desc">GAIN REAL-TIME INDUSTRY INSIGHTS</p>
+            <div className="whatisbad-image">
+                <img src={Img2} alt="Image 1" className="whatisbad-circle" />
+                <p className="whatisbad-desc">GAIN REAL-TIME INDUSTRY INSIGHTS</p>
             </div>
-            <div className="image">
-                <img src={Img3} alt="Image 1" className="circle" />
-                <p className="desc">ENJOY REFRESHMENTS AND SNACKS</p>
+            <div className="whatisbad-image">
+                <img src={Img3} alt="Image 1" className="whatisbad-circle" />
+                <p className="whatisbad-desc">ENJOY REFRESHMENTS AND SNACKS</p>
             </div>
-            <div className="image">
-                <img src={Img4} alt="Image 1" className="circle" />
-                <p className="desc">ATTEND MOTIVATIONAL SESSIONS</p>
+            <div className="whatisbad-image">
+                <img src={Img4} alt="Image 1" className="whatisbad-circle" />
+                <p className="whatisbad-desc">ATTEND MOTIVATIONAL SESSIONS</p>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
