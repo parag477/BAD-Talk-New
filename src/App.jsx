@@ -6,8 +6,6 @@ import Team from './components/Team/Team'
 import WhatisBad from './components/WhatisBad/WhatisBad'
 
 function App() {
- 
-
   return (
 <>
 <div>
