@@ -1,68 +1,43 @@
-import React from "react";
-import "./WhatIsBad.css";
+import React from 'react'
+import './WhatisBad.css';
+import Img1 from '../../assets/bad-1.jpeg'
+import Img2 from '../../assets/bad-2.jpeg'
+import Img3 from '../../assets/bad-3.avif'
+import Img4 from '../../assets/bad-4.jpg'
 
-export default function WhatIsBad() {
+const WhatisBad = () => {
   return (
-    <section
-      className="main_container"
-      style={{ width: "100%", marginTop: "6rem" }}
-      id="whatIsAbout"
-    >
-      <div className="heading">
-        <h1>
-          WHAT DOES{" "}
-          <span style={{ color: "rgba(255, 0, 43, 0.874)" }}>B.A.D</span> MEAN?
-        </h1>
-      </div>
-      <div className="content">
-        <div className="first">
-          <img src="./src/assets/img1.jpg" alt="img" className="image-main" />
+    <div>
+        <div className="top">
+            <h3 className='why-attend'>WHY ATTEND</h3>
+            <h1 className="main-head">WHAT'S IN IT BAD FOR STUDENTS?</h1>
+            <h3>BENEFITS FOR STUDENTS</h3>
+            <div className="separator">
+                <hr/>
+                <h3 className="line">BENEFITS FOR STUDENTS</h3>
+                <hr/>
+            </div>
         </div>
-        <div
-          className="second"
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <div className="image">
-            <img src="./src/assets/B.png" className="img" />
-            <div className="info">
-              <h2>Breakdown</h2>
-              <p>
-                CEOs share their stories by breaking down their career paths,
-                revealing the critical steps, failures, and learnings that
-                shaped their success. This segment emphasizes understanding the
-                foundational elements that contribute to their professional
-                journeys
-              </p>
+        <div className="images">
+            <div className="image">
+                <img src={Img1} alt="Image 1" className="circle" />
+                <p className="desc">INTERNSHIP OPPORTUNITIES WITH LEADING COMPANIES</p>
             </div>
-          </div>
-          <div className="image">
-            <img src="./src/assets/A.png" className="img2" />
-            <div className="info">
-              <h2>Analysis</h2>
-              <p>
-                This part involves an in-depth look at the business strategies,
-                market dynamics, and leadership principles employed by these
-                leaders. This segment provides a comprehensive understanding of
-                the practical applications of business theories and models.
-              </p>
+            <div className="image">
+                <img src={Img2} alt="Image 1" className="circle" />
+                <p className="desc">GAIN REAL-TIME INDUSTRY INSIGHTS</p>
             </div>
-          </div>
-          <div className="image">
-            <img src="./src/assets/D.png" className="img" />
-            <div className="info">
-              <h2>Decision</h2>
-              <p>
-                Focuses on the creative and strategic aspects of leadership,
-                where CEOs share their approaches to innovation, strategic
-                planning, and problem-solving and how execute their ideas. It’s
-                about designing a roadmap to success, highlighting the
-                importance of foresight, adaptability, and innovation in the
-                corporate world.
-              </p>
+            <div className="image">
+                <img src={Img3} alt="Image 1" className="circle" />
+                <p className="desc">ENJOY REFRESHMENTS AND SNACKS</p>
             </div>
-          </div>
+            <div className="image">
+                <img src={Img4} alt="Image 1" className="circle" />
+                <p className="desc">ATTEND MOTIVATIONAL SESSIONS</p>
+            </div>
         </div>
-      </div>
-    </section>
-  );
+    </div>
+  )
 }
+
+export default WhatisBad;

@@ -1,38 +1,42 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./EventDetails.css";
-import event from "../../assets/trial2badtalkshomepage.png"
+import heroImage from "../../assets/ceoImg.png"; // Replace with your image path
 
 function EventDetails() {
-  const navigate = useNavigate();
-
-  const handleRegister = () => {
-    navigate("/register");
-  };
-
   return (
-    <section className="event_details">
-      {/* <div className="breakdown">
-        <h1>
-          BREAKDOWN <span className="analysis">ANALYSIS</span>
+    <div className="hero-section">
+      <div className="hero-content">
+        <h1 className="hero-headline">
+          BAD <span className="hero-highlight">Talks 2024</span> <br />
+          The CEO Summit :
         </h1>
-        <h1 className="decision">DECISION</h1>
-      </div> */}
-      <img src={event} alt="Event" />
-     <div className="venue">
-     <p>
-        <b>Event Venue</b> - Audi-2 IPS Academy Rajendra Nagar, Indore
-      </p>
-      <p>
-        <b>Event Date</b> - 08 August 2024
-      </p>
-     </div>
-      
-      {/* <button onClick={handleRegister} class="button"><span>Register </span></button> */}
-      <div className="registration">
-      <p >Registration coming soon..</p>
+        <p className="hero-subheadline">The Ultimate Business And Experience</p>
+        <div className="hero-event-details">
+          <p>
+            <span className="hero-label">Date : </span> August 8 , 2024
+          </p>
+          <div className="hero-vertical-line"></div>
+          <p>
+            <span className="hero-label">Location : </span>Audi-2 IPS Academy
+            Rajendra Nagar, Indore
+          </p>
+          <div className="hero-image12">
+            <img src={heroImage} alt="Hero" />
+          </div>
+        </div>
+        <p className="hero-description">
+          Join us for a transformative event where the brightest business minds
+          share their journeys, challenges, and strategies for success. Network
+          with industry leaders and elevate your business skills.
+        </p>
+        <button className="hero-button">
+          <span>Reserve Your Spot Now</span>
+        </button>
       </div>
-    </section>
+      <div className="hero-image">
+        <img src={heroImage} alt="Hero" />
+      </div>
+    </div>
   );
 }
 
