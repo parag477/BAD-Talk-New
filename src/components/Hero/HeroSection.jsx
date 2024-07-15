@@ -30,7 +30,7 @@ function HeroSection() {
           share their journeys, challenges, and strategies for success. Network
           with industry leaders and elevate your business skills.
         </p>
-        <button className="hero-button">
+        <button className="hero-button button">
           <span>Reserve Your Spot Now</span>
         </button>
       </div>

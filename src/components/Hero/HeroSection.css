@@ -19,9 +19,9 @@
   border-radius: 0.625rem;
 }
 
-.hero-image,
+
 .hero-image12 {
-  max-width: 58%;
+  max-width: 70%;
 }
 
 .hero-image img,
@@ -78,7 +78,8 @@
   line-height: 4.15rem;
   font-size: 3.25rem;
   font-style: italic;
-  margin-top: 0;
+  margin-top: .5rem;
+  padding-bottom: 1rem;
 }
 
 .hero-event-details {
@@ -182,7 +183,9 @@
   .hero-headline {
     font-size: 2.5rem;
     line-height: 2.4rem;
+    width: 100%;
   }
+  
 
   .hero-headline-2 {
     font-size: 1.2rem;
@@ -207,4 +210,63 @@
     width: 100%;
     border-radius: 0.625rem;
   }
+  .hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  padding: 0.3rem 1rem;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
